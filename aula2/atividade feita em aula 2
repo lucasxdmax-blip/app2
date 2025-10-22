@@ -1,10 +1,9 @@
 void main(){
   Cliente cli = Cliente(
-    "lucas",
-    "123.321.232-54",
-    "29082003",
-    "4324223",
-    "123"
+   nome: "lucas",
+   cpf: "123.321.232-54",
+   cep: "4324223",
+   senha: "123"
   
   );
   
