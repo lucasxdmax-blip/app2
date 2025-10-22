@@ -7,7 +7,7 @@ void main(){
   
   );
   
-  
+  print(cli);
 }
 
 class Cliente {
@@ -57,6 +57,18 @@ class Cliente {
   set nacimento (valor) => this._nacimento = valor;
   set cep (valor)=> this._cep = valor;
   set senha (valor) => this._senha = valor;
+  
+  //metado toString
+  @override
+  String toString(){
+    return"Nome: ${this._nome}\n " +
+          "Cpf: ${this._cpf}\n"+
+          "Data de nacimento: ${this._nacimento}\n" +
+          "Cep ${this._cep}\n" + 
+          "Senha ${this._senha}\n";
+    
+    
+  }
   
   
 }
