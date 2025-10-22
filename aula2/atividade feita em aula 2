@@ -1,0 +1,56 @@
+void main(){
+  Cliente cli = Cliente(
+    "lucas",
+    "123.321.232-54",
+    "29082003",
+    "4324223",
+    "123"
+  
+  );
+  
+  
+}
+
+class Cliente {
+  //atributos
+  String? _nome;
+  String? _cpf;
+  DateTime? _nacimento;
+  String? _cep;
+  String? _senha;
+  
+  //metodo contrutor
+  
+  Cliente(
+    this._nome,
+    this._cep,
+    this._cpf,
+   this._nacimento,
+    this._senha,
+  );
+  
+  
+  //fazer login
+  bool fazerlogin(){
+    return
+      (this._cpf == "123.456.789-10") &&
+      (this._senha == "123") ;
+    
+  }
+  
+  //gatters e Setters
+  
+  get nome => this._nome;
+  get cpf => this._cpf;
+  get nacimento => this._nacimento;
+  get cep => this._cep;
+  get senha => this._senha;
+  
+  set nome (valor) => this._nome = valor;
+  set cpf (valor) => this._cpf = valor;
+  set nacimento (valor) => this._nacimento = valor;
+  set cep (valor)=> this._cep = valor;
+  set senha (valor) => this._senha = valor;
+  
+  
+}
