@@ -15,19 +15,26 @@ class Cliente {
   //atributos
   String? _nome;
   String? _cpf;
-  DateTime? _nacimento;
+  String? _nacimento;
   String? _cep;
   String? _senha;
   
   //metodo contrutor
   
-  Cliente(
-    this._nome,
-    this._cep,
-    this._cpf,
-   this._nacimento,
-    this._senha,
-  );
+  Cliente({
+    required String nome,
+    required String cpf,
+    String nacimento = "",
+    String cep = "",
+    required String senha
+  }) {
+    
+    this._nome = nome;
+    this._cep = cep;
+    this._cpf = cpf;
+    this._nacimento = nacimento;
+    this._senha = senha;
+  }
   
   
   //fazer login
