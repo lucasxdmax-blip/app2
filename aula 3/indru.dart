@@ -18,6 +18,11 @@ abstract class Pessoa {
   set email(valor) => this._email = valor;
   set telefone(valor) => this._telefone = valor;
   
+  String toString() {
+    
+    return "Email: ${this._email} \n Telefone: ${this._telefone} \n";
+  }
+  
   
   
 }
