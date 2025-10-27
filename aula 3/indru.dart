@@ -43,5 +43,17 @@ class Funcionario extends Pessoa {
     super._email = email;
     this._cargo = cargo;
   }
+  String? get nome => this._nome;
+  String? get cargo => this.cargo;
+  set nome(String? valor) => this._nome = valor;
+  set cargo (String? valor) => this._cargo = valor;
+  
+  String toString(){
+   return "Nome: ${this._nome}/n" +
+          "cargo:${this._cargo}/n" +
+          "Email:${super._email}/n" +
+          "Telefone: ${super._telefone}/n"; 
+   
+  }
 }
 
