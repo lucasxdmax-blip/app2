@@ -27,4 +27,21 @@ abstract class Pessoa {
   
 }
 
+//classe que vai herdar da classe pessoa
+class Funcionario extends Pessoa {
+  String? _nome;
+  String? _cargo;
+  
+  Funcionario({
+    required String nome,
+    required String telefone,
+    String email = "",
+    String cargo = ""
+    }){
+    this._nome = nome;
+    super._telefone = telefone;
+    super._email = email;
+    this._cargo = cargo;
+  }
+}
 
