@@ -1,8 +1,15 @@
 void main() {
-
+  Funcionario f = Funcionario
+    (nome:"vasco da gama",
+     telefone: "(55)59999999",
+     email: "vasco@gmail.com",
+     cargo: "sem titulo"
+    );
+  
+ print (f);
 }
 
-// exemplo de classes abstrads e herança 
+// exemplo de classes abstratas e herança 
 
 abstract class Pessoa {
   String? _email;
@@ -20,7 +27,7 @@ abstract class Pessoa {
   
   String toString() {
     
-    return "Email: ${this._email} \n Telefone: ${this._telefone} \n";
+    return "Email: ${this._email} /n Telefone: ${this._telefone} /n";
   }
   
   
@@ -50,8 +57,8 @@ class Funcionario extends Pessoa {
   
   String toString(){
    return "Nome: ${this._nome}/n" +
-          "cargo:${this._cargo}/n" +
-          "Email:${super._email}/n" +
+          "cargo: ${this._cargo}/n" +
+          "Email: ${super._email}/n" +
           "Telefone: ${super._telefone}/n"; 
    
   }
