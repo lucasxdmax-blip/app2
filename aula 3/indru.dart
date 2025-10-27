@@ -13,10 +13,10 @@ abstract class Pessoa {
     this._telefone = telefone;
     
   }
-  get email => this._email;
-  get telefone => this._telefone;
-  set email(valor) => this._email = valor;
-  set telefone(valor) => this._telefone = valor;
+  String? get email => this._email;
+  String? get telefone => this._telefone;
+    set email(String? valor) => this._email = valor;
+    set telefone(String? valor) => this._telefone = valor;
   
   String toString() {
     
