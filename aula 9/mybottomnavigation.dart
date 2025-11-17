@@ -1,3 +1,4 @@
+import 'package:aula6/screens/settingspage.dart';
 import 'package:flutter/material.dart';
 
 class MybottomNavigation extends StatefulWidget {
@@ -20,6 +21,14 @@ class _MybottomNavigationState extends State<MybottomNavigation> {
       onTap: (i) {
          setState(() {
            _index = i;
+           Switch(_index) {
+            case 1: Navigator.push(
+              context,
+              MaterialPageRoute(
+              builder: (context) =>
+               MySttingspage(title: "Comfiguraçãoes"))
+            );
+           }
          });
         },
       currentIndex: _index,
