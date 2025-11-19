@@ -21,7 +21,7 @@ class _MybottomNavigationState extends State<MybottomNavigation> {
       onTap: (i) {
          setState(() {
            _index = i;
-           Switch(_index) {
+           switch(_index) {
             case 1: Navigator.push(
               context,
               MaterialPageRoute(
